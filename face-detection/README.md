@@ -1,6 +1,6 @@
 # Face Detection
 
-This package provides models for running real-time face detection.
+Questo package fornisce modelli per eseguire la rilevazione del viso in tempo reale.
 
 Currently, we provide 1 model option:
 
