@@ -1,10 +1,11 @@
 # Face-Detection
-Modelli e principi della percezione
+Progetto di principi e modelli della percezione
+
+Membri: Paola Mrruku, Lakshan De Mel
 
 Presentazione: https://prezi.com/view/vsemGid4BFIrgBFDwykL/
 
-# Rilevamento del volto
-Il nostro cervello, con l’evolvere umano, si è abituato a vedere certe scene. Siamo abituati a vedere i visi e senza volerlo, l’umano ha capito quali sono i punti di interesse che permettono di distinguere una persona da un’altra. Ormai sono noti nella visione artificiale tutti i metodi di riconoscimento e questi sono:
+**Rilevamento del volto** - Il nostro cervello, con l’evolvere umano, si è abituato a vedere certe scene. Siamo abituati a vedere i visi e senza volerlo, l’umano ha capito quali sono i punti di interesse che permettono di distinguere una persona da un’altra. Ormai sono noti nella visione artificiale tutti i metodi di riconoscimento e questi sono:
 - i bordi degli occhi: sia interni che esterni
 - bordi bocca
 - punto centrale naso
@@ -292,4 +293,10 @@ Scrivere un pseudocodice esaustivo per l'intero algoritmo sarebbe complesso, ma 
 
 L'implementazione reale richiederebbe l'uso di strutture dati e algoritmi specifici. La libreria OpenCV offre un'implementazione di SIFT che può essere utilizzata direttamente in molti ambienti di sviluppo. 
 
-***OpenCV***, acronimo di Open Source Computer Vision Library, è una libreria open source specializzata nella visione artificiale e nell'elaborazione delle immagini. Essa fornisce un vasto insieme di strumenti e funzionalità che permettono di sviluppare applicazioni che coinvolgono la manipolazione delle immagini, il riconoscimento di oggetti, il tracciamento dei movimenti, il rilevamento dei volti, la calibrazione della camera, e molte altre attività legate alla visione artificiale. La sua natura open source la rende accessibile a sviluppatori in tutto il mondo.
+***OpenCV***, acronimo di Open Source Computer Vision Library, è una libreria open source specializzata nella visione artificiale e nell'elaborazione delle immagini. Essa fornisce un vasto insieme di strumenti e funzionalità che permettono di sviluppare applicazioni che coinvolgono la manipolazione delle immagini, il riconoscimento di oggetti, il tracciamento dei movimenti, il rilevamento dei volti, la calibrazione della camera, e molte altre attività legate alla visione artificiale. La sua natura open source la rende accessibile a sviluppatori in tutto il mondo. Andremo ad usare questa libreria per implementare il nostro algoritmo sul questo [file](FaceDetection_Realtime) della repository, dove troverete anche la spiegazione del codice e dei modelli usati.
+
+Tuttavia, ci sono altri metodi di face detection:
+
+- Rilevamento del viso con cascata di Haar: Estremamente veloce ma incline a falsi positivi e in generale meno accurato rispetto ai rilevatori di volti basati sul deep learning.
+- Rilevamento del viso con dlib (HOG e CNN): HOG è più accurato rispetto alle cascata di Haar ma computazionalmente più costoso. Il rilevatore di volti CNN di dlib è il più accurato del gruppo, ma non può essere eseguito in tempo reale senza una GPU.
+- Reti di convoluzione cascata multi-task (MTCNN): Rilevatore di volti basato sul deep learning molto accurato. Compatibile facilmente sia con Keras che con TensorFlow.
