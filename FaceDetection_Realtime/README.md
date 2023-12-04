@@ -11,7 +11,7 @@ Questo è un progetto basato su Python 3 per eseguire il rilevamento veloce e ac
 
 ## Passi di Esecuzione
 1. Aprire il terminale e inserire il percorso del file nella directory desiderata e incollare il comando fornito di seguito
-2. ``` python detect_faces_video.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel```
+2. ```python detect_faces_video.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel```
 
 ## Spiegazione dell'algoritmo
 File di riferimento: [detection_faces_video](detect_faces_video.py)
